@@ -96,4 +96,4 @@ Supported baseline modes are `logistic_regression`, `random_forest`, and `hist_g
 
 ## Citation
 
-If you use this code, please contaxt us. Dataset access is provided through the Hugging Face repository linked above.
+If you use this code, please contact us. Dataset access is provided through the Hugging Face repository linked above.
