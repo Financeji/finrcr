@@ -88,25 +88,12 @@ python scripts/run_finrcr_all_tasks.py \
 
 For a local LLM server, add `--api-base` and `--api-model`. Use `--max-eval` for a smoke test before launching a full run.
 
-## Run the tabular baseline
 
-```bash
-python src/finbench_tabular_baseline.py \
-  --ds-name cd1 \
-  --model random_forest \
-  --output-dir outputs/baseline_cd1
-```
 
 Supported baseline modes are `logistic_regression`, `random_forest`, and `hist_gradient_boosting`.
 
-## Reproducibility controls
 
-The command-line interfaces expose the random seed, evidence-card size, memory-bank size, retrieval mix, number of retrieved cases, forest size, reasoning repetitions, LLM sampling temperature, token budget, and selective-calling policy. Validation data are used for temperature scaling and threshold selection; test data are used only for final evaluation.
-
-## Outputs and privacy
-
-Generated predictions and reasoning traces can contain sample-level financial profiles. Keep them local, review them before sharing, and never commit them to a public repository. The default `.gitignore` excludes outputs, cached datasets, checkpoints, logs, temporary files, and local environment files.
 
 ## Citation
 
-If you use this code, cite the accompanying paper and the FinBench dataset according to their official publication records. Dataset access is provided through the Hugging Face repository linked above.
+If you use this code, please contaxt us. Dataset access is provided through the Hugging Face repository linked above.
